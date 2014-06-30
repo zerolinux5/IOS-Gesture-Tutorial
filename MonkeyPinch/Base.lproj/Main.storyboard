@@ -27,6 +27,10 @@
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="object_bananabunch.png" translatesAutoresizingMaskIntoConstraints="NO" id="xcj-WI-sUv">
                                 <rect key="frame" x="112" y="254" width="175" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1Ca-pb-v2y" appends="YES" id="luH-rk-Rsh"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -36,6 +40,11 @@
                 <panGestureRecognizer minimumNumberOfTouches="1" id="xuj-LH-Sib">
                     <connections>
                         <action selector="handlePan:" destination="vXZ-lx-hvc" id="zfN-bw-uzB"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="1Ca-pb-v2y">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="WYK-Vt-Z5I"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
