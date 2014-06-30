@@ -44,31 +44,37 @@
                 <panGestureRecognizer minimumNumberOfTouches="1" id="xuj-LH-Sib">
                     <connections>
                         <action selector="handlePan:" destination="vXZ-lx-hvc" id="zfN-bw-uzB"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="4u7-om-jci"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="1Ca-pb-v2y">
                     <connections>
                         <action selector="handlePan:" destination="vXZ-lx-hvc" id="WYK-Vt-Z5I"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="bfh-sw-NPl"/>
                     </connections>
                 </panGestureRecognizer>
                 <pinchGestureRecognizer id="1tg-M8-mqt">
                     <connections>
                         <action selector="handlePinch:" destination="vXZ-lx-hvc" id="gYI-Zt-y7l"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="WZd-8o-VtB"/>
                     </connections>
                 </pinchGestureRecognizer>
                 <pinchGestureRecognizer id="QLc-Qa-lYB">
                     <connections>
                         <action selector="handlePinch:" destination="vXZ-lx-hvc" id="xG7-Iv-9pd"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="VAl-hf-Zqe"/>
                     </connections>
                 </pinchGestureRecognizer>
                 <rotationGestureRecognizer id="O0C-6w-0cO">
                     <connections>
                         <action selector="handleRotate:" destination="vXZ-lx-hvc" id="hjI-e1-q9T"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="gSf-a9-Yfv"/>
                     </connections>
                 </rotationGestureRecognizer>
                 <rotationGestureRecognizer id="T52-xu-VUc">
                     <connections>
                         <action selector="handleRotate:" destination="vXZ-lx-hvc" id="e36-Qd-Oab"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="Lfg-2I-TYo"/>
                     </connections>
                 </rotationGestureRecognizer>
             </objects>
