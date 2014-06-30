@@ -14,6 +14,7 @@
 
 @implementation ViewController
 @synthesize chompPlayer;
+@synthesize hehePlayer;
 
 - (AVAudioPlayer *)loadWav:(NSString *)filename {
     NSURL * url = [[NSBundle mainBundle] URLForResource:filename withExtension:@"wav"];
@@ -37,10 +38,17 @@
         [view addGestureRecognizer:recognizer];
         
         // TODO: Add a custom gesture recognizer too
+        [recognizer requireGestureRecognizerToFail:self.monkeyPan];
+        [recognizer requireGestureRecognizerToFail:self.bananaPan];
+        TickleGestureRecognizer * recognizer2 = [[TickleGestureRecognizer alloc] initWithTarget:self action:@selector(handleTickle:)];
+        recognizer2.delegate = self;
+        [view addGestureRecognizer:recognizer2];
         
     }
     
     self.chompPlayer = [self loadWav:@"chomp"];
+    
+    self.hehePlayer = [self loadWav:@"hehehe1"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,6 +58,7 @@
 }
 
 - (IBAction)handlePan:(UIPanGestureRecognizer *)recognizer {
+    return;
     
     CGPoint translation = [recognizer translationInView:self.view];
     recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,
@@ -93,6 +102,10 @@
 
 - (void)handleTap:(UITapGestureRecognizer *)recognizer {
     [self.chompPlayer play];
+}
+
+- (void)handleTickle:(TickleGestureRecognizer *)recognizer {
+    [self.hehePlayer play];
 }
 
 

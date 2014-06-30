@@ -26,6 +26,7 @@
 		EAD289C7196124F400890C35 /* monkey_1.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD289C3196124F400890C35 /* monkey_1.png */; };
 		EAD289C8196124F400890C35 /* object_bananabunch.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD289C4196124F400890C35 /* object_bananabunch.png */; };
 		EAD289CA196129B400890C35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD289C9196129B400890C35 /* AVFoundation.framework */; };
+		EAD289CD19612B7500890C35 /* TickleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD289CC19612B7500890C35 /* TickleGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		EAD289C3196124F400890C35 /* monkey_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkey_1.png; sourceTree = "<group>"; };
 		EAD289C4196124F400890C35 /* object_bananabunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = object_bananabunch.png; sourceTree = "<group>"; };
 		EAD289C9196129B400890C35 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EAD289CB19612B7500890C35 /* TickleGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickleGestureRecognizer.h; sourceTree = "<group>"; };
+		EAD289CC19612B7500890C35 /* TickleGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickleGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				EAD289A11961244F00890C35 /* ViewController.m */,
 				EAD289A31961244F00890C35 /* Images.xcassets */,
 				EAD289921961244F00890C35 /* Supporting Files */,
+				EAD289CB19612B7500890C35 /* TickleGestureRecognizer.h */,
+				EAD289CC19612B7500890C35 /* TickleGestureRecognizer.m */,
 			);
 			path = MonkeyPinch;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				EAD289A21961244F00890C35 /* ViewController.m in Sources */,
 				EAD2899C1961244F00890C35 /* AppDelegate.m in Sources */,
 				EAD289981961244F00890C35 /* main.m in Sources */,
+				EAD289CD19612B7500890C35 /* TickleGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,6 +39,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="bananaPan" destination="1Ca-pb-v2y" id="hTl-qf-tzZ"/>
+                        <outlet property="monkeyPan" destination="xuj-LH-Sib" id="hyr-G2-Sbf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="xuj-LH-Sib">
