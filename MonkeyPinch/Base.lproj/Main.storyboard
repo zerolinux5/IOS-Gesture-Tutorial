@@ -16,11 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monkey_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="N42-8a-V6t">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monkey_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="N42-8a-V6t">
                                 <rect key="frame" x="26" y="40" width="140" height="168"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xuj-LH-Sib" appends="YES" id="0gP-5u-Xsn"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="object_bananabunch.png" translatesAutoresizingMaskIntoConstraints="NO" id="xcj-WI-sUv">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="object_bananabunch.png" translatesAutoresizingMaskIntoConstraints="NO" id="xcj-WI-sUv">
                                 <rect key="frame" x="112" y="254" width="175" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -29,6 +33,11 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="xuj-LH-Sib">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="zfN-bw-uzB"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>
