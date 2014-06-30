@@ -13,11 +13,34 @@
 @end
 
 @implementation ViewController
+@synthesize chompPlayer;
+
+- (AVAudioPlayer *)loadWav:(NSString *)filename {
+    NSURL * url = [[NSBundle mainBundle] URLForResource:filename withExtension:@"wav"];
+    NSError * error;
+    AVAudioPlayer * player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    if (!player) {
+        NSLog(@"Error loading %@: %@", url, error.localizedDescription);
+    } else {
+        [player prepareToPlay];
+    }
+    return player;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    for (UIView * view in self.view.subviews) {
+        
+        UITapGestureRecognizer * recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+        recognizer.delegate = self;
+        [view addGestureRecognizer:recognizer];
+        
+        // TODO: Add a custom gesture recognizer too
+        
+    }
+    
+    self.chompPlayer = [self loadWav:@"chomp"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,6 +89,10 @@
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
     return YES;
+}
+
+- (void)handleTap:(UITapGestureRecognizer *)recognizer {
+    [self.chompPlayer play];
 }
 
 
