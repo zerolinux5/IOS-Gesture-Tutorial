@@ -21,6 +21,10 @@
 		EAD289AD1961244F00890C35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD2898F1961244F00890C35 /* UIKit.framework */; };
 		EAD289B51961244F00890C35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAD289B31961244F00890C35 /* InfoPlist.strings */; };
 		EAD289B71961244F00890C35 /* MonkeyPinchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD289B61961244F00890C35 /* MonkeyPinchTests.m */; };
+		EAD289C5196124F400890C35 /* chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = EAD289C1196124F400890C35 /* chomp.wav */; };
+		EAD289C6196124F400890C35 /* hehehe1.wav in Resources */ = {isa = PBXBuildFile; fileRef = EAD289C2196124F400890C35 /* hehehe1.wav */; };
+		EAD289C7196124F400890C35 /* monkey_1.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD289C3196124F400890C35 /* monkey_1.png */; };
+		EAD289C8196124F400890C35 /* object_bananabunch.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD289C4196124F400890C35 /* object_bananabunch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		EAD289B21961244F00890C35 /* MonkeyPinchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MonkeyPinchTests-Info.plist"; sourceTree = "<group>"; };
 		EAD289B41961244F00890C35 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EAD289B61961244F00890C35 /* MonkeyPinchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonkeyPinchTests.m; sourceTree = "<group>"; };
+		EAD289C1196124F400890C35 /* chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chomp.wav; sourceTree = "<group>"; };
+		EAD289C2196124F400890C35 /* hehehe1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hehehe1.wav; sourceTree = "<group>"; };
+		EAD289C3196124F400890C35 /* monkey_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkey_1.png; sourceTree = "<group>"; };
+		EAD289C4196124F400890C35 /* object_bananabunch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = object_bananabunch.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 		EAD289911961244F00890C35 /* MonkeyPinch */ = {
 			isa = PBXGroup;
 			children = (
+				EAD289C0196124F400890C35 /* MonkeyPinchResources */,
 				EAD2899A1961244F00890C35 /* AppDelegate.h */,
 				EAD2899B1961244F00890C35 /* AppDelegate.m */,
 				EAD2899D1961244F00890C35 /* Main.storyboard */,
@@ -150,6 +159,17 @@
 				EAD289B31961244F00890C35 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAD289C0196124F400890C35 /* MonkeyPinchResources */ = {
+			isa = PBXGroup;
+			children = (
+				EAD289C1196124F400890C35 /* chomp.wav */,
+				EAD289C2196124F400890C35 /* hehehe1.wav */,
+				EAD289C3196124F400890C35 /* monkey_1.png */,
+				EAD289C4196124F400890C35 /* object_bananabunch.png */,
+			);
+			path = MonkeyPinchResources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +248,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD289C5196124F400890C35 /* chomp.wav in Resources */,
 				EAD289A41961244F00890C35 /* Images.xcassets in Resources */,
 				EAD289961961244F00890C35 /* InfoPlist.strings in Resources */,
 				EAD2899F1961244F00890C35 /* Main.storyboard in Resources */,
+				EAD289C7196124F400890C35 /* monkey_1.png in Resources */,
+				EAD289C6196124F400890C35 /* hehehe1.wav in Resources */,
+				EAD289C8196124F400890C35 /* object_bananabunch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
