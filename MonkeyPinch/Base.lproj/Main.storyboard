@@ -22,6 +22,8 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="xuj-LH-Sib" appends="YES" id="0gP-5u-Xsn"/>
+                                    <outletCollection property="gestureRecognizers" destination="1tg-M8-mqt" appends="YES" id="ZGz-f3-bkN"/>
+                                    <outletCollection property="gestureRecognizers" destination="O0C-6w-0cO" appends="YES" id="L31-jF-ZfV"/>
                                 </connections>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="object_bananabunch.png" translatesAutoresizingMaskIntoConstraints="NO" id="xcj-WI-sUv">
@@ -30,6 +32,8 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="1Ca-pb-v2y" appends="YES" id="luH-rk-Rsh"/>
+                                    <outletCollection property="gestureRecognizers" destination="QLc-Qa-lYB" appends="YES" id="h8u-Wt-W3s"/>
+                                    <outletCollection property="gestureRecognizers" destination="T52-xu-VUc" appends="YES" id="Nvc-bj-jxz"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -47,6 +51,26 @@
                         <action selector="handlePan:" destination="vXZ-lx-hvc" id="WYK-Vt-Z5I"/>
                     </connections>
                 </panGestureRecognizer>
+                <pinchGestureRecognizer id="1tg-M8-mqt">
+                    <connections>
+                        <action selector="handlePinch:" destination="vXZ-lx-hvc" id="gYI-Zt-y7l"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="QLc-Qa-lYB">
+                    <connections>
+                        <action selector="handlePinch:" destination="vXZ-lx-hvc" id="xG7-Iv-9pd"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="O0C-6w-0cO">
+                    <connections>
+                        <action selector="handleRotate:" destination="vXZ-lx-hvc" id="hjI-e1-q9T"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <rotationGestureRecognizer id="T52-xu-VUc">
+                    <connections>
+                        <action selector="handleRotate:" destination="vXZ-lx-hvc" id="e36-Qd-Oab"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
         </scene>
     </scenes>
